@@ -2,10 +2,9 @@ h1. Overview
 
 The MacKeyboardMouseSimulator simulates key press/release, mouse move and mouse click events with the help of mac OS-X "Quartz Event Service":http://developer.apple.com/library/mac/#documentation/Carbon/Reference/QuartzEventServicesRef/Reference/reference.html.
 
-The simulator uses the C API for event taps to alter the stream of low-level 
-user input events.
+The simulator uses the C API for event taps to alter the stream of low-level user input events.
 
-Some parts are taken from "libsikuli":http://github.com/doubleshow/libsikuli.git
+Some parts are taken from "libsikuli":https://github.com/doubleshow/libsikuli ("robot.cpp":https://github.com/doubleshow/libsikuli/blob/master/src/main/cpp/os/robot.cpp).
 
 h1. Example
 
