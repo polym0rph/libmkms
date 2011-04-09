@@ -1,0 +1,4 @@
+.DS_Store
+lib/build
+lib/docs/doxygen
+sample-app/build

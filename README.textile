@@ -1,0 +1,45 @@
+h1. Overview
+
+The MacKeyboardMouseSimulator simulates key press/release, mouse move and mouse click events with the help of mac OS-X "Quartz Event Service":http://developer.apple.com/library/mac/#documentation/Carbon/Reference/QuartzEventServicesRef/Reference/reference.html.
+
+The simulator uses the C API for event taps to alter the stream of low-level 
+user input events.
+
+Some parts are taken from "libsikuli":http://github.com/doubleshow/libsikuli.git
+
+h1. Example
+
+<pre>
+mkms::MacKeyboardMouseSimulator simulator;
+
+std::cout << "Simulating mouse move" << std::endl;
+simulator.mouseMove(100, 100);
+
+std::cout << "Simulating single mouse click" << std::endl;
+simulator.mouseSingleClick(1);
+
+std::cout << "Simulating key press 'a' " << std::endl;
+simulator.pressOnce(VK_A);
+</pre>
+
+h1. Build process
+
+h2. How to build libmkms
+
+# mkdir lib/build
+# cd lib/build
+# cmake ..
+# make
+
+h2. How to build the sample app
+
+# mkdir sample-app/build
+# cd sample-app/build
+# cmake ..
+# make
+
+h1. Documentation
+
+# cd lib/build
+# make mkms-docs
+# open ../docs/doxygen/html/index.html
